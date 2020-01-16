@@ -88,14 +88,19 @@
             border-radius: 150%;
          }
          #m {
-            margin-top: -1%;
-            margin-left: 19%;
-            font-size: 200%;
-            transition: .2s;
+            color: black;
+               border: solid black;
+               border-width: 3px 0px 3px 0;
+               display: inline-block;
+               padding: 20%;
+               margin-top: 24%;
+               margin-left: 30%;
+               z-index: 10;
+               transition: .2s;
          }
          #menuPull:hover #m{
-            margin-top: 15%;
-            margin-left: 29%;
+            margin-top: 25%;
+            margin-left: 30%;
          }
 
          #section1 {
@@ -288,7 +293,7 @@
              MAP THE <br/>WORLD.
          </p>
        </div>
-      <a href="#" onclick="return false"><div id = "menuPull"onclick="openMenu()"><div id ="m">&#9776</div></div></a>
+      <a href="#" onclick="return false"><div id = "menuPull"onclick="openMenu()"><div id ="m"></div></div></a>
       <div id="menu"><div id = "project"><h1>Map the World</h1> Each dot is a UNESCO world heratage site. Click one to learn all about it!
          <p style="margin: 0em; padding-top: 5px;"><img src="https://sites.google.com/site/jmckmls/kml/yellowIcon2.png" alt="yellow icon" height = "32" width ="32"style="vertical-align:middle; padding-bottom: 4px"></img> Cultural sites</p>
          <p style="margin: 0em;"><img src="https://sites.google.com/site/jmckmls/kml/redIcon2.png" alt="red icon" height = "32" width ="32"style="vertical-align:middle; padding-bottom: 4px"></img>Natural sites</p>
@@ -351,7 +356,7 @@
          function openMenu() {
          if (document.getElementById("menu").style.top == "-100vh") {
             document.getElementById("menu").style.top = "0vh";
-            document.getElementById("menuPull").style.top = "90vh";
+            document.getElementById("menuPull").style.top = "85vh";
             document.getElementById("menuPull").style.transform = "rotate(180deg)";
          }
          else {
