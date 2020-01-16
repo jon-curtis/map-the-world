@@ -19,6 +19,27 @@
          ::-webkit-scrollbar {
          display: none;
          }
+         #head {
+            position: absolute;
+            width:auto;  
+            height: auto;
+            left: 15px; 
+            top: -10vh;
+            font-family: 'Squada One', cursive; 
+            text-emphasis-color: gray;
+            font-size: 10vh;  
+            text-shadow: red 4px 3px 0; 
+            font-weight:bold; 
+            z-index: 6; 
+            overflow:visible;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            line-height: .8;
+         }
          #menu {
             height: 100vh;
             width: 100vw;
@@ -42,32 +63,11 @@
                padding-bottom:100px;
             }
 
-         #head {
-            position:absolute;
-            width:200px; 
-            height: 1px; 
-            left: 15px; 
-            top:-45px; 
-            font-family: 'Squada One', cursive; 
-            text-emphasis-color: gray;
-            font-size: 60px; 
-            line-height: 70px; 
-            text-shadow: red 4px 3px 0; 
-            font-weight:bold; 
-            z-index: 6; 
-            overflow:visible;
-            -webkit-touch-callout: none;
-            -webkit-user-select: none;
-            -khtml-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-            line-height: .8;
-         }
+
          
          #menuPull {
-            height: 50px;
-            width: 50px;
+            height: 8vh;
+            width: 8vh;
             color: black;
             background-color:white;
             border-radius: 100%;
@@ -83,19 +83,19 @@
          }
 
          #menuPull:hover{
-            height: 75px;
-            width: 75px;
+            height: 12vh;
+            width: 12vh;
             border-radius: 150%;
          }
          #m {
-            margin-top: 3%;
-            margin-left: 21%;
+            margin-top: -1%;
+            margin-left: 19%;
             font-size: 200%;
             transition: .2s;
          }
          #menuPull:hover #m{
-            margin-top: 18%;
-            margin-left: 30%;
+            margin-top: 15%;
+            margin-left: 29%;
          }
 
          #section1 {
@@ -165,7 +165,7 @@
          #credit{
             bottom: 1px;
             right: 1px;
-            font-size: 14px;
+            font-size: 14;
             background-color: rgba(0,0,0,.5);
             color: white;
             width: auto;
@@ -212,8 +212,8 @@
                width: 46vh;
             }
          #dot {
-            height: 50px;
-            width: 50px;
+            height: 8vh;
+            width: 8vh;
             background-color:white;
             border-radius: 100%;
             display: inline-block;
@@ -230,31 +230,32 @@
                border: solid black;
                border-width: 0 3px 3px 0;
                display: inline-block;
-               padding: 10px;
-               margin-top: 13px;
-               margin-left: 9px;
+               padding: 20%;
+               margin-top: 24%;
+               margin-left: 15%;
                transform: rotate(-45deg);
                z-index: 10;
                transition: .2s;
                
             }
          #dot:hover{
-            height: 75px;
-            width: 75px;
+            height: 12vh;
+            width: 12vh;
             border-radius: 150%;
          }
 
          #dot:hover i{
-            margin-top: 34%;
-            margin-left: 28%;
+            margin-top: 25%;
+            margin-left: 22%;
+            
             transform: rotate(315deg);
          }
          #jumpTop {
             position: absolute;
-            top: 289vh;
+            top: 288vh;
             right: 3vh;
-            height: 50px;
-            width: 50px;
+            height: 8vh;
+            width: 8vh;
             background-color:white;
             border-radius: 100%;
             z-index: 5;
@@ -265,9 +266,9 @@
          }
          
          #jumpTop:hover{
-            height: 60px;
-            width: 60px;
-            border-radius: 120%;
+            height: 12vh;
+            width: 12vh;
+            border-radius: 150%;
          }
          #jumpTop:hover i{
             margin-top: 30%;
@@ -282,6 +283,11 @@
    </head>
    
    <body>
+      <div id="head">
+         <p style="color:rgb(54, 54, 54)">
+             MAP THE <br/>WORLD.
+         </p>
+       </div>
       <a href="#" onclick="return false"><div id = "menuPull"onclick="openMenu()"><div id ="m">&#9776</div></div></a>
       <div id="menu"><div id = "project"><h1>Map the World</h1> Each dot is a UNESCO world heratage site. Click one to learn all about it!
          <p style="margin: 0em; padding-top: 5px;"><img src="https://sites.google.com/site/jmckmls/kml/yellowIcon2.png" alt="yellow icon" height = "32" width ="32"style="vertical-align:middle; padding-bottom: 4px"></img> Cultural sites</p>
@@ -295,14 +301,9 @@
          Do me a solid and don't look at the source code I have no idea what kind of inefficent atrocities are hiding in there.</p>
          <h1>Credits</h1><p>- UNESCO for the datasheet</p>- Hardik Vasa for the <a href="https://github.com/hardikvasa/google-images-download" target="_blank" style="color: rgb(159, 181, 228);"> python script.</a><p>- The photographers who's images are here. Sorry I'm unable to give better credit.</p> <p>- StackOverflow for teaching me HTML <br>&nbsp; </p>
       </div>
-   
    </div>
       
-      <div id="head">
-         <p style="color:rgb(54, 54, 54)">
-             MAP THE <br/>WORLD.
-         </p>
-       </div>
+
       
       <div id = "image"></div>
       <a id = "creditLink" href = ""> <div id = "credit"></div></a>
