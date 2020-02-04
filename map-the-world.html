@@ -96,12 +96,40 @@
             z-index: 21;
             box-shadow: 0px 0px 0px 5px royalblue;
          }
-
-         #menuPull:hover{
+         @media (min-width: 700px) {
+            #menuPull:hover{
             height: 12vh;
             width: 12vh;
             border-radius: 150%;
          }
+         #menuPull:hover #m{
+            margin-top: 25%;
+            margin-left: 30%;
+         }
+         #dot:hover{
+            height: 12vh;
+            width: 12vh;
+            border-radius: 150%;
+         }
+
+         #dot:hover i{
+            margin-top: 25%;
+            margin-left: 22%;
+            
+            transform: rotate(315deg);
+         }
+         #jumpTop:hover{
+            height: 12vh;
+            width: 12vh;
+            border-radius: 150%;
+         }
+         #jumpTop:hover i{
+            margin-top: 30%;
+            margin-left: 22%;
+            transition: .2s ease-in-out;
+         }
+         }
+
          #m {
             color: black;
                border: solid black;
@@ -113,10 +141,7 @@
                z-index: 10;
                transition: .2s;
          }
-         #menuPull:hover #m{
-            margin-top: 25%;
-            margin-left: 30%;
-         }
+
 
          #section1 {
          	height: 100vh;
@@ -258,18 +283,7 @@
                transition: .2s;
                
             }
-         #dot:hover{
-            height: 12vh;
-            width: 12vh;
-            border-radius: 150%;
-         }
 
-         #dot:hover i{
-            margin-top: 25%;
-            margin-left: 22%;
-            
-            transform: rotate(315deg);
-         }
          #jumpTop {
             position: absolute;
             top: 288vh;
@@ -287,16 +301,7 @@
          #jumpTop i {
             margin-top: 27%;
          }
-         #jumpTop:hover{
-            height: 12vh;
-            width: 12vh;
-            border-radius: 150%;
-         }
-         #jumpTop:hover i{
-            margin-top: 30%;
-            margin-left: 22%;
-            transition: .2s ease-in-out;
-         }
+
 
 
       </style>
